@@ -122,6 +122,7 @@ const Filter = () => {
         <div id="class">
           <FormGroup>
             <div>
+              <span className="mr-3">Class:</span>
               <FormControlLabel control={<Checkbox />} label="Necromancer" />
               <FormControlLabel control={<Checkbox />} label="Barbarian" />
               <FormControlLabel control={<Checkbox />} label="Sorcerer" />
