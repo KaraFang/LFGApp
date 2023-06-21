@@ -15,7 +15,7 @@ function App() {
           <Navbar />
         </div>
       </div>
-      <div className={`bg-stone-800 ${styles.paddingX} ${styles.flexCenter}`}>
+      <div className={`bg-stone-900 ${styles.paddingX} ${styles.flexCenter}`}>
         <Filter />
       </div>
 
