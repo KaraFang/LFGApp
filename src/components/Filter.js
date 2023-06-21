@@ -146,7 +146,7 @@ const Filter = () => {
         </div>
         {/* GROUP TYPE */}
         <FormControl sx={{ m: 1, minWidth: 200 }}>
-          <InputLabel id="groupType-label">Level Range</InputLabel>
+          <InputLabel id="groupType-label">Group Type</InputLabel>
           <Select
             labelId="groupType-label"
             id="groupType-helper"
