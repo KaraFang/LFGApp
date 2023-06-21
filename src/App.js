@@ -1,23 +1,37 @@
-import logo from './logo.svg';
+import styles from './styles';
+import Navbar from './components/Navbar';
+import CardList from './components/CardList';
+import Footer from './components/Footer';
+import Scroll from './components/Scroll';
+
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="w-full overflow-hidden">
+      <div
+        className={`bg-stone-950 ${styles.paddingX} ${styles.flexCenter}`}
+      >
+        <div className={`${styles.boxWidth}`}>
+          <Navbar />
+        </div>
+      </div>
+
+      <div
+        className={`bg-stone-950 ${styles.flexCenter} ${styles.paddingY}`}
+      >
+        <div className={`${styles.boxWidth}`}>
+            <Scroll>
+                <CardList />
+            </Scroll>
+        </div>
+      </div>
+
+      <div className={`bg-stone-950 ${styles.flexStart}`}>
+        <div className={`${styles.boxWidth}`}>
+          <Footer />
+        </div>
+      </div>
     </div>
   );
 }
